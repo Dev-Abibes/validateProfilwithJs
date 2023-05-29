@@ -17,7 +17,7 @@ if(userName.value.trim() == ""){
 }
  ```
  ### valider password
- ```
+ ```js
  function isValidPassword(pwd){
     //la condition de regex doit etre validé 
     var regexPwd = /^[A-Za-z]\w{7,14}$/;
@@ -25,14 +25,14 @@ if(userName.value.trim() == ""){
 }
  ```
  ### déclencher un evenement et d'enregistrer si les données sont vérifiées et validées
-```
+```js
 btnRegister.addEventListener("click", (event) =>{
     event.preventDefault();
     validateInput();
 });
  ```
 ### onSucces()
-```
+```js
 function onSuccess(input, message){
     //
     let parent = input.parentElement;
@@ -45,7 +45,7 @@ function onSuccess(input, message){
 }
  ```
 ### onError()
- ```
+ ```js
  function onError(input, message){
     //
     let parent = input.parentElement;
