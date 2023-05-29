@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #b021b8 0%, #c7a7dc 74%);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.container{
+    width: 400px;
+    background-color: rgb(13, 79, 137);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.header{
+    background-color: #09c6f9;
+    padding: 10px 20px;
+}
+.form{
+    padding: 20px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.form-control label{
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: large;
+  color: antiquewhite;
+}
+.form-control input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px;
+  }
+.form-control.success input{
+    border: 2px solid greenyellow;
+    /* color: greenyellow; */
+}
+.form-control.error input{
+    border: 2px solid rgb(242, 17, 17);
+    /* color: red; */
+}
+
+.form-control small{
+      position: absolute;
+      margin: 3px;
+      visibility: hidden;
+      color: rgb(240, 180, 27);
+}
+
+.form-control .register{
+    background: #1ca5cb;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px;
+    font-size: large;
+    color: azure;
+}
+.form-control .register:hover{
+    background: #587ebb;
+    color: aliceblue;
+    cursor: pointer;
+
+}
