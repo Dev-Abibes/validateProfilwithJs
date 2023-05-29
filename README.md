@@ -1,8 +1,8 @@
-# validateProfilwithJs
+## validateProfilwithJs
 Validation des input de création de profil sur javascript
 
-# function validateInput()
-##  valider username
+## function validateInput()
+###  valider username
 ```js
 if(userName.value.trim() == ""){
         onError(userName,"vous devez remplir le champs conard");
@@ -24,11 +24,13 @@ if(userName.value.trim() == ""){
     return regexPwd.test(pwd);
 }
  ```
- # déclencher un evenement et d'enregistrer si les données sont vérifiées et validées
- btnRegister.addEventListener("click", (event) =>{
+ ### déclencher un evenement et d'enregistrer si les données sont vérifiées et validées
+```
+btnRegister.addEventListener("click", (event) =>{
     event.preventDefault();
     validateInput();
 });
+ ```
 ### onSucces()
 ```
 function onSuccess(input, message){
